@@ -7,7 +7,120 @@ header{
     height:5rem;
     width:100%;
     border: 3px solid black;
+    font-size:2rem;
+    display:flex;
+    border-radius: 15px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    .name{
+        margin-left: 4rem;
+    }
+
+}
+.menu{
+    font-size: 20pt;
+
+}
+nav ul{
+    display:flex;
+    gap: 2rem;
+    margin-right: 2rem;
+
 }
 img.PF{
     border-radius: 50%;
+    width:80%;
+    height: 50vh;
+}
+
+.intro-Box{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height: 60vh;
+
+
+}
+.Box-PF{
+    border: 3px solid black;
+    width:40%;
+    height: 60vh;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Box-intro{
+    border: 3px solid black;
+    width:40%;
+    height: 60vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:1rem;
+
+
+}
+.Box-intro p{
+    font-size:19pt;
+    margin-top: 4rem;
+}
+.Box-contact{
+    border: 3px solid black;
+    width:40%;
+    height: 60vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    padding:1rem;
+}
+.Box-contact ul{
+    font-size: 19pt;
+    line-height: 8rem;
+    margin-left: 1rem;
+    text-align: left;
+    list-style: circle;
+
+
+;
+}
+.Opleidings-Box{
+    border: 3px solid black;
+    border-radius: 15px;
+    width:100%;
+    height:30vh;
+}
+.Skills-Box{
+    border: 3px solid black;
+    border-radius: 15px;
+    width:100%;
+    height:60vh;
+}
+.Talen-Box{
+    border: 3px solid black;
+    border-radius: 15px;
+    width:100%;
+    height:40vh;
+}
+.Werk-Box{
+    border: 3px solid black;
+    border-radius: 15px;
+    width:100%;
+    height:50vh;
+}
+footer{
+    height:5rem;
+    width:100%;
+    border: 3px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 15pt;
+    padding:2rem ;
 }
