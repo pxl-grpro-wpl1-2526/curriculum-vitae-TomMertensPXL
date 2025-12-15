@@ -55,6 +55,7 @@ img.PF{
     justify-content: center;
     align-items: center;
 
+
 }
 .Box-intro{
     border: 3px solid black;
@@ -109,6 +110,38 @@ img.PF{
     border-radius: 15px;
     width:100%;
     height:40vh;
+    padding:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.Tabel-Talen{
+    border: 8px solid black;
+    border-collapse: collapse;
+    width:60%;
+    height:60%;
+    margin-bottom: 3rem;
+    table-layout: fixed;
+    th{
+        border: 3px solid black;
+    }
+    td{
+        border: 3px solid black;
+        text-align: center;
+        font-size: 12pt;
+        font-weight: bold;
+    }
+    tr:nth-child(even){
+        background-color:#0CA4A5;
+    }
+    tr:nth-child(odd){
+        background-color:#0892A5;
+    }
+
+
 }
 .Werk-Box{
     border: 3px solid black;
