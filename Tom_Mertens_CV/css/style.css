@@ -3,6 +3,13 @@
     margin:0 ;
     box-sizing: border-box;
 }
+.headtitle{
+    text-align: center;
+    width:100%;
+    height:5vh;
+    padding:1rem;
+
+}
 header{
     height:5rem;
     width:100%;
@@ -14,6 +21,7 @@ header{
     position:sticky;
     align-items: center;
     justify-content: space-between;
+    background-color: darkred;
     .name{
         margin-left: 4rem;
     }
@@ -29,16 +37,15 @@ nav ul{
     margin-right: 2rem;
 
 }
-img.PF{
+img.pf{
     border-radius: 50%;
     width:95%;
     height: 50vh;
 }
-.PF:hover{
+.pf:hover{
     box-shadow: 0 15px 40px rgba(0,0,0,0.35);
 }
-
-.intro-Box{
+.intro-box{
     display:flex;
     flex-direction:row;
     width:100%;
@@ -46,7 +53,7 @@ img.PF{
 
 
 }
-.Box-PF{
+.box-pf{
     border: 3px solid black;
     width:40%;
     height: 60vh;
@@ -57,7 +64,7 @@ img.PF{
 
 
 }
-.Box-intro{
+.box-intro{
     border: 3px solid black;
     width:40%;
     height: 60vh;
@@ -69,11 +76,11 @@ img.PF{
 
 
 }
-.Box-intro p{
+.box-intro p{
     font-size:19pt;
     margin-top: 4rem;
 }
-.Box-contact{
+.box-contact{
     border: 3px solid black;
     width:40%;
     height: 60vh;
@@ -83,7 +90,7 @@ img.PF{
     text-align: center;
     padding:1rem;
 }
-.Box-contact ul{
+.box-contact ul{
     font-size: 19pt;
     line-height: 8rem;
     margin-left: 1rem;
@@ -93,19 +100,136 @@ img.PF{
 
 ;
 }
-.Opleidings-Box{
+.opleidings-box{
     border: 3px solid black;
     border-radius: 15px;
     width:100%;
     height:30vh;
+    .opleidings-cards{
+        height:26vh;
+        display:flex;
+        align-items: center;
+        padding:1rem;
+        gap:2rem;
+        section{
+            border: 3px solid black;
+            border-radius: 15px;
+            width:20%;
+            height:20vh;
+            h3{
+                border:3px solid black;
+                border-radius: 10px;
+            }
+
+
+        }
+
+
+    }
 }
-.Skills-Box{
+.skills-box {
     border: 3px solid black;
     border-radius: 15px;
-    width:100%;
-    height:60vh;
+    width: 100%;
+    height: 160vh;
+
+    h2 {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .Hard-skills {
+        display: flex;
+        height: 70vh;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        section {
+            border: 3px solid black;
+            border-radius: 15px;
+            width: 20%;
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                height: 50%;
+
+            }
+            .outer{
+                width: 80%;
+                background-color: grey;
+                display: flex;
+                height: 5px;
+                border-radius: 10px;
+            }
+
+            .inner{
+                background-color: red;
+                height: 100%;
+                position: relative;
+                border-radius: 10px;
+
+            }
+            .bi{
+                width:60%;
+            }
+            .git{
+                width:80%;
+            }
+            .sql{
+                width:70%;
+            }
+            .sketch{
+                width:85%
+            }
+            .notion{
+                width:75%
+            }
+            .sap{
+                width:55%
+            }
+            .office{
+                width:90%
+
+        }
+            .web{
+                width:75%;
+            }
+            .csharp{
+            width:50%;}
+
+
+
+        }
+    }
+
+    .Soft-skills {
+        display: flex;
+        height: 50vh;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        section {
+            border: 3px solid black;
+            border-radius: 15px;
+            width: 20%;
+            height: 20vh;
+
+        }
+
+    }
 }
-.Talen-Box{
+.talen-box{
     border: 3px solid black;
     border-radius: 15px;
     width:100%;
@@ -118,7 +242,7 @@ img.PF{
 
 
 }
-.Tabel-Talen{
+.tabel-talen{
     border: 8px solid black;
     border-collapse: collapse;
     width:60%;
@@ -143,11 +267,48 @@ img.PF{
 
 
 }
-.Werk-Box{
+.werk-box{
     border: 3px solid black;
     border-radius: 15px;
     width:100%;
     height:50vh;
+
+    .work-cards
+    {
+        height:40vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        section{
+            border: 3px solid black;
+            width:20%;
+            height:30vh;
+            border-radius: 15px;
+            list-style-position: inside;
+            h3{
+                text-align: center;
+                padding:0.5rem;
+                border: 3px solid black;
+                border-radius: 10px;
+
+            }
+            ul{
+                text-align: left;
+                list-style-type: circle;
+                li{
+                    padding:1.15rem;
+                }
+            }
+
+        }
+        section:hover{
+            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+
+        }
+    }
+
+
 }
 footer{
     height:5rem;
