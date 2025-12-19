@@ -158,6 +158,7 @@ img.pf{
         height:26vh;
         display:flex;
         align-items: center;
+        justify-content: center;
         padding:1rem;
         gap:2rem;
         section{
@@ -165,9 +166,14 @@ img.pf{
             border-radius: 15px;
             width:20%;
             height:20vh;
+            list-style-position: inside;
+            ul li{
+                padding:0.75rem;
+            }
             h3{
                 border:3px solid black;
                 border-radius: 10px;
+                text-align: center;
             }
 
 
