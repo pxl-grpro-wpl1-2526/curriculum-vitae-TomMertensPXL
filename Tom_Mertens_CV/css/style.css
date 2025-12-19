@@ -3,6 +3,19 @@
     margin:0 ;
     box-sizing: border-box;
 }
+body{
+    h1,h2,h3{
+        font-family: serif,sans-serif;
+
+    }
+    color: white;
+    p{
+        font-family: arial,sans-serif;
+
+    }
+    background: black;
+
+}
 .headtitle{
     text-align: center;
     width:100%;
@@ -21,20 +34,32 @@ header{
     position:sticky;
     align-items: center;
     justify-content: space-between;
-    background-color: darkred;
+    }
     .name{
         margin-left: 4rem;
     }
 
-}
+
 .menu{
     font-size: 20pt;
+
 
 }
 nav ul{
     display:flex;
     gap: 2rem;
     margin-right: 2rem;
+    list-style: none;
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+    li a:hover{
+        font-size:2rem;
+
+    }
+
+
 
 }
 img.pf{
@@ -74,6 +99,12 @@ img.pf{
     text-align: center;
     padding:1rem;
 
+    h1{
+        border: 3px solid black;
+        border-radius: 15px;
+    }
+
+
 
 }
 .box-intro p{
@@ -89,6 +120,20 @@ img.pf{
     flex-direction:column;
     text-align: center;
     padding:1rem;
+
+    h1{
+        border: 3px solid black;
+        border-radius: 15px;
+    }
+    ul li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color:white;
+        }
+
+    }
+
 }
 .box-contact ul{
     font-size: 19pt;
@@ -105,6 +150,10 @@ img.pf{
     border-radius: 15px;
     width:100%;
     height:30vh;
+    h1{
+        border: 3px solid black;
+        border-radius: 15px;
+    }
     .opleidings-cards{
         height:26vh;
         display:flex;
@@ -123,6 +172,9 @@ img.pf{
 
 
         }
+        section:hover{
+            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+        }
 
 
     }
@@ -133,9 +185,23 @@ img.pf{
     width: 100%;
     height: 160vh;
 
+    h1{
+        border: 3px solid black;
+        border-radius: 15px;
+    }
+
     h2 {
         text-align: center;
-        padding: 2rem;
+        text-decoration: underline;
+        padding: 1rem;
+
+
+
+
+
+
+
+
     }
 
     .Hard-skills {
@@ -147,6 +213,9 @@ img.pf{
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        section:hover{
+            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+        }
 
         section {
             border: 3px solid black;
@@ -156,6 +225,12 @@ img.pf{
             display: flex;
             flex-direction: column;
             align-items: center;
+            h3{
+                border:3px solid black;
+                border-radius: 10px;
+                width:100%;
+                text-align: center;
+            }
 
             img {
                 height: 50%;
@@ -213,17 +288,28 @@ img.pf{
         display: flex;
         height: 50vh;
         width: 100%;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 8rem;
+
+        section:hover{
+            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+        }
 
         section {
             border: 3px solid black;
             border-radius: 15px;
             width: 20%;
             height: 20vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                height: 50%;
+            }
+
 
         }
 
@@ -239,6 +325,12 @@ img.pf{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    h1{
+        border: 3px solid black;
+        border-radius: 15px;
+        width:100%;
+        text-align: center;
+    }
 
 
 }
@@ -259,11 +351,12 @@ img.pf{
         font-weight: bold;
     }
     tr:nth-child(even){
-        background-color:#0CA4A5;
+        background-color:#A0B2A6;
     }
     tr:nth-child(odd){
-        background-color:#0892A5;
+        background-color:#CBBFBB;
     }
+
 
 
 }
@@ -272,6 +365,10 @@ img.pf{
     border-radius: 15px;
     width:100%;
     height:50vh;
+    h1{
+        border: 3px solid black;
+        border-radius: 15px;
+    }
 
     .work-cards
     {
@@ -320,4 +417,77 @@ footer{
     align-items: center;
     font-size: 15pt;
     padding:2rem ;
+    a{
+        color:white;
+    }
 }
+.colorgrad{
+    background: linear-gradient(-45deg,#11111D ,#4d4177,#3a60a0,#c8ddf5);
+    background-size: 400% 400%;
+    animation:gradient 15s ease infinite;
+    height:5rem;
+}
+.colorgradskill{
+    background: linear-gradient(-45deg,#11111D ,#4d4177,#3a60a0,#c8ddf5);
+    background-size: 400% 400%;
+    animation:gradient 15s ease infinite;
+    height:160vh;
+
+}
+.colorgradpf{
+    background: linear-gradient(-45deg,#11111D ,#4d4177,#3a60a0,#c8ddf5);
+    background-size: 400% 400%;
+    animation:gradient 15s ease infinite;
+    height:60vh;
+
+}
+.colorgradintro{
+    background: linear-gradient(-45deg, #11111D ,#4d4177,#3a60a0,#c8ddf5);
+    background-size: 400% 400%;
+    animation:gradient 15s ease infinite;
+    height:60vh;
+
+}
+.colorgradcontact{
+    background: linear-gradient(-45deg, #11111D ,#4d4177,#3a60a0,#c8ddf5);
+    background-size: 400% 400%;
+    animation:gradient 15s ease infinite;
+    height:60vh;
+
+}
+.colorgradopl{
+    background: linear-gradient(-45deg, #11111D ,#4d4177,#3a60a0,#c8ddf5);
+    background-size: 400% 400%;
+    animation:gradient 15s ease infinite;
+    height:30vh;
+}
+.colorgradtalen{
+    background: linear-gradient(-45deg,#11111D ,#4d4177,#3a60a0,#c8ddf5);
+    background-size: 400% 400%;
+    animation:gradient 15s ease infinite;
+    height:40vh;
+}
+.colorgradwerk{
+    background: linear-gradient(-45deg,#11111D ,#4d4177,#3a60a0,#c8ddf5);
+    background-size: 400% 400%;
+    animation:gradient 15s ease infinite;
+    height:50vh;
+}
+.colorgradfoot{
+    background: linear-gradient(-45deg,#11111D ,#4d4177,#3a60a0,#c8ddf5);
+    background-size: 400% 400%;
+    animation:gradient 15s ease infinite;
+    height:5rem;
+}
+
+@keyframes gradient {
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;} }
+
+
+
+
+
+
+
