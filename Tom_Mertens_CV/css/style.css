@@ -232,52 +232,65 @@ img.pf{
                 text-align: center;
             }
 
+
             img {
                 height: 50%;
 
-            }
-            .outer{
+                }
+
+            .outer {
                 width: 80%;
                 background-color: grey;
                 display: flex;
                 height: 5px;
                 border-radius: 10px;
-            }
+                }
 
-            .inner{
-                background-color: red;
+            .inner {
+                background: red;
                 height: 100%;
                 position: relative;
                 border-radius: 10px;
 
             }
-            .bi{
-                width:60%;
-            }
-            .git{
-                width:80%;
-            }
-            .sql{
-                width:70%;
-            }
-            .sketch{
-                width:85%
-            }
-            .notion{
-                width:75%
-            }
-            .sap{
-                width:55%
-            }
-            .office{
-                width:90%
 
-        }
-            .web{
-                width:75%;
+            .bi {
+                width: 60%;
             }
-            .csharp{
-            width:50%;}
+
+            .git {
+                    width: 80%;
+                }
+
+            .sql {
+                    width: 70%;
+                }
+
+            .sketch {
+                    width: 85%
+                }
+
+            .notion {
+                    width: 75%
+                }
+
+            .sap {
+                    width: 55%
+                }
+
+            .office {
+                    width: 90%
+
+                }
+
+            .web {
+                    width: 75%;
+                }
+
+            .csharp {
+                    width: 50%;
+                }
+
 
 
 
