@@ -1,445 +1,497 @@
+
 * {
-    padding:0 ;
-    margin:0 ;
-    box-sizing: border-box;
-}
-body{
-    h1,h2,h3{
-        font-family: serif,sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+body {
+        h1, h2, h3 {
+            font-family: serif, sans-serif;
+
+        }
+
+        color: white;
+
+        p {
+            font-family: arial, sans-serif;
+
+        }
+
+        background: black;
 
     }
-    color: white;
-    p{
-        font-family: arial,sans-serif;
+
+.headtitle {
+        text-align: center;
+        width: 100%;
+        height: 5vh;
+        padding: 1rem;
 
     }
-    background: black;
 
-}
-.headtitle{
-    text-align: center;
-    width:100%;
-    height:5vh;
-    padding:1rem;
-
-}
-header{
-    height:5rem;
-    width:100%;
-    border: 3px solid black;
-    font-size:2rem;
-    display:flex;
-    border-radius: 15px;
-    top: 0;
-    position:sticky;
-    align-items: center;
-    justify-content: space-between;
+header {
+        height: 5rem;
+        width: 100%;
+        border: 3px solid black;
+        font-size: 2rem;
+        display: flex;
+        border-radius: 15px;
+        top: 0;
+        position: sticky;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
     }
-    .name{
+
+.name {
         margin-left: 4rem;
     }
 
-
-.menu{
-    font-size: 20pt;
-
-
-}
-nav ul{
-    display:flex;
-    gap: 2rem;
-    margin-right: 2rem;
-    list-style: none;
-    li a {
-        text-decoration: none;
-        color: white;
+#drop-menu {
+        display: none;
     }
-    li a:hover{
-        font-size:2rem;
+
+.menu-icon {
+        display: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+.menu {
+        font-size: 20pt;
+
 
     }
 
-
-
-}
-img.pf{
-    border-radius: 50%;
-    width:95%;
-    height: 50vh;
-}
-.pf:hover{
-    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
-}
-.intro-box{
-    display:flex;
-    flex-direction:row;
-    width:100%;
-    height: 60vh;
-
-
-}
-.box-pf{
-    border: 3px solid black;
-    width:40%;
-    height: 60vh;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-}
-.box-intro{
-    border: 3px solid black;
-    width:40%;
-    height: 60vh;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding:1rem;
-
-    h1{
-        border: 3px solid black;
-        border-radius: 15px;
-    }
-
-
-
-}
-.box-intro p{
-    font-size:19pt;
-    margin-top: 4rem;
-}
-.box-contact{
-    border: 3px solid black;
-    width:40%;
-    height: 60vh;
-    border-radius: 15px;
-    display: flex;
-    flex-direction:column;
-    text-align: center;
-    padding:1rem;
-
-    h1{
-        border: 3px solid black;
-        border-radius: 15px;
-    }
-    ul li{
+nav ul {
+        display: flex;
+        gap: 2rem;
+        margin-right: 2rem;
         list-style: none;
-        a{
+
+        li a {
             text-decoration: none;
-            color:white;
+            color: white;
         }
 
+        li a:hover {
+            font-size: 2rem;
+
+        }
+
+
     }
 
-}
-.box-contact ul{
-    font-size: 19pt;
-    line-height: 8rem;
-    margin-left: 1rem;
-    text-align: left;
-    list-style: circle;
+img.pf {
+        border-radius: 50%;
+        width: 95%;
+        height: 50vh;
+    }
+
+.pf:hover {
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    }
+
+.intro-box {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60vh;
 
 
-;
-}
-.opleidings-box{
-    border: 3px solid black;
-    border-radius: 15px;
-    width:100%;
-    height:30vh;
-    h1{
+    }
+
+.box-pf {
         border: 3px solid black;
+        width: 40%;
+        height: 60vh;
         border-radius: 15px;
-    }
-    .opleidings-cards{
-        height:26vh;
-        display:flex;
-        align-items: center;
+        display: flex;
         justify-content: center;
-        padding:1rem;
-        gap:2rem;
-        section{
-            border: 3px solid black;
-            border-radius: 15px;
-            width:20%;
-            height:20vh;
-            list-style-position: inside;
-            ul li{
-                padding:0.75rem;
-            }
-            h3{
-                border:3px solid black;
-                border-radius: 10px;
-                text-align: center;
-            }
-
-
-        }
-        section:hover{
-            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
-        }
+        align-items: center;
 
 
     }
-}
-.skills-box {
-    border: 3px solid black;
-    border-radius: 15px;
-    width: 100%;
-    height: 160vh;
 
-    h1{
+.box-intro {
         border: 3px solid black;
+        width: 40%;
+        height: 60vh;
         border-radius: 15px;
-    }
-
-    h2 {
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        text-decoration: underline;
         padding: 1rem;
 
-
-
-
-
-
+        h1 {
+            border: 3px solid black;
+            border-radius: 15px;
+        }
 
 
     }
 
-    .Hard-skills {
-        display: flex;
-        height: 70vh;
-        width: 100%;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        section:hover{
-            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
-        }
+.box-intro p {
+        font-size: 19pt;
+        margin-top: 4rem;
+    }
 
-        section {
+.box-contact {
+        border: 3px solid black;
+        width: 40%;
+        height: 60vh;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+
+        h1 {
             border: 3px solid black;
             border-radius: 15px;
-            width: 20%;
-            height: 20vh;
+        }
+
+        ul li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+        }
+
+    }
+
+.box-contact ul {
+        font-size: 19pt;
+        line-height: 8rem;
+        margin-left: 1rem;
+        text-align: left;
+        list-style: circle;;
+    }
+
+.opleidings-box {
+        border: 3px solid black;
+        border-radius: 15px;
+        width: 100%;
+        height: 30vh;
+
+        h1 {
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+
+        .opleidings-cards {
+            height: 26vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            h3{
-                border:3px solid black;
-                border-radius: 10px;
-                width:100%;
-                text-align: center;
+            justify-content: center;
+            padding: 1rem;
+            gap: 2rem;
+
+            section {
+                border: 3px solid black;
+                border-radius: 15px;
+                width: 20%;
+                height: 20vh;
+                list-style-position: inside;
+
+                ul li {
+                    padding: 0.75rem;
+                }
+
+                h3 {
+                    border: 3px solid black;
+                    border-radius: 10px;
+                    text-align: center;
+                }
+
+
+            }
+
+            section:hover {
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
             }
 
 
-            img {
-                height: 50%;
+        }
+    }
 
-                }
+.skills-box {
+        border: 3px solid black;
+        border-radius: 15px;
+        width: 100%;
+        height: 160vh;
 
-            .outer {
-                width: 80%;
-                background-color: grey;
+        h1 {
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+            padding: 1rem;
+
+
+        }
+
+        .Hard-skills {
+            display: flex;
+            height: 70vh;
+            width: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            section:hover {
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+            }
+
+            section {
+                border: 3px solid black;
+                border-radius: 15px;
+                width: 20%;
+                height: 20vh;
                 display: flex;
-                height: 5px;
-                border-radius: 10px;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+
+                h3 {
+                    border: 3px solid black;
+                    border-radius: 10px;
+                    width: 100%;
+                    text-align: center;
                 }
 
-            .inner {
-                background: red;
-                height: 100%;
-                position: relative;
-                border-radius: 10px;
 
-            }
+                img {
+                    height: 50%;
 
-            .bi {
-                width: 60%;
-            }
+                }
 
-            .git {
+                .outer {
+                    width: 80%;
+                    background-color: grey;
+                    display: flex;
+                    height: 5px;
+                    border-radius: 10px;
+                }
+
+                .inner {
+                    background: red;
+                    height: 100%;
+                    position: relative;
+                    border-radius: 10px;
+
+                }
+
+                .bi {
+                    width: 60%;
+                }
+
+                .git {
                     width: 80%;
                 }
 
-            .sql {
+                .sql {
                     width: 70%;
                 }
 
-            .sketch {
+                .sketch {
                     width: 85%
                 }
 
-            .notion {
+                .notion {
                     width: 75%
                 }
 
-            .sap {
+                .sap {
                     width: 55%
                 }
 
-            .office {
+                .office {
                     width: 90%
 
                 }
 
-            .web {
+                .web {
                     width: 75%;
                 }
 
-            .csharp {
+                .csharp {
                     width: 50%;
                 }
 
 
-
-
-        }
-    }
-
-    .Soft-skills {
-        display: flex;
-        height: 50vh;
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 8rem;
-
-        section:hover{
-            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+            }
         }
 
-        section {
-            border: 3px solid black;
-            border-radius: 15px;
-            width: 20%;
-            height: 20vh;
+        .Soft-skills {
             display: flex;
-            flex-direction: column;
+            height: 50vh;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
-            img{
-                height: 50%;
+            gap: 8rem;
+
+            section:hover {
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
             }
 
+            section {
+                border: 3px solid black;
+                border-radius: 15px;
+                width: 20%;
+                height: 20vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+
+                h3 {
+                    border: 3px solid black;
+                    border-radius: 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                img {
+                    height: 50%;
+                }
+
+
+            }
 
         }
-
     }
-}
-.talen-box{
-    border: 3px solid black;
-    border-radius: 15px;
-    width:100%;
-    height:40vh;
-    padding:1rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    h1{
+
+.talen-box {
         border: 3px solid black;
         border-radius: 15px;
-        width:100%;
-        text-align: center;
-    }
-
-
-}
-.tabel-talen{
-    border: 8px solid black;
-    border-collapse: collapse;
-    width:60%;
-    height:60%;
-    margin-bottom: 3rem;
-    table-layout: fixed;
-    th{
-        border: 3px solid black;
-    }
-    td{
-        border: 3px solid black;
-        text-align: center;
-        font-size: 12pt;
-        font-weight: bold;
-    }
-    tr:nth-child(even){
-        background-color:#A0B2A6;
-    }
-    tr:nth-child(odd){
-        background-color:#CBBFBB;
-    }
-
-
-
-}
-.werk-box{
-    border: 3px solid black;
-    border-radius: 15px;
-    width:100%;
-    height:50vh;
-    h1{
-        border: 3px solid black;
-        border-radius: 15px;
-    }
-
-    .work-cards
-    {
-        height:40vh;
+        width: 100%;
+        height: 40vh;
+        padding: 1rem;
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
 
-        section{
+        h1 {
             border: 3px solid black;
-            width:20%;
-            height:30vh;
             border-radius: 15px;
-            list-style-position: inside;
-            h3{
-                text-align: center;
-                padding:0.5rem;
+            width: 100%;
+            text-align: center;
+        }
+
+
+    }
+
+.tabel-talen {
+        border: 8px solid black;
+        border-collapse: collapse;
+        width: 60%;
+        height: 60%;
+        margin-bottom: 3rem;
+        table-layout: fixed;
+
+        th {
+            border: 3px solid black;
+        }
+
+        td {
+            border: 3px solid black;
+            text-align: center;
+            font-size: 12pt;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #A0B2A6;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #CBBFBB;
+        }
+
+
+    }
+
+.werk-box {
+        border: 3px solid black;
+        border-radius: 15px;
+        width: 100%;
+        height: 50vh;
+
+        h1 {
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+
+        .work-cards {
+            height: 40vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            section {
                 border: 3px solid black;
-                border-radius: 10px;
+                width: 20%;
+                height: 30vh;
+                border-radius: 15px;
+                list-style-position: inside;
 
-            }
-            ul{
-                text-align: left;
-                list-style-type: circle;
-                li{
-                    padding:1.15rem;
+                h3 {
+                    text-align: center;
+                    padding: 0.5rem;
+                    border: 3px solid black;
+                    border-radius: 10px;
+
                 }
+
+                ul {
+                    text-align: left;
+                    list-style-type: circle;
+
+                    li {
+                        padding: 1.15rem;
+                    }
+                }
+
             }
 
-        }
-        section:hover{
-            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+            section:hover {
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
 
+            }
+        }
+
+
+    }
+
+footer {
+        height: 5rem;
+        width: 100%;
+        border: 3px solid black;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15pt;
+        padding: 2rem;
+
+        a {
+            color: white;
         }
     }
 
-
-}
-footer{
-    height:5rem;
-    width:100%;
-    border: 3px solid black;
-    border-radius: 15px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    font-size: 15pt;
-    padding:2rem ;
-    a{
-        color:white;
-    }
-}
 .colorgrad{
     background: linear-gradient(-45deg,#11111D ,#4d4177,#3a60a0,#c8ddf5);
     background-size: 400% 400%;
@@ -503,6 +555,247 @@ footer{
     0%{background-position: 0% 50%;}
     50%{background-position: 100% 50%;}
     100%{background-position: 0% 50%;} }
+@media (max-width: 576px){
+    header{
+        height:3.5rem;
+        font-size:1.2rem;
+        padding:0 1rem;
+        border-radius:15px;
+    }
+    .name{
+        margin-left:1rem;
+
+    }
+    nav ul{
+        gap:1rem;
+        margin-right:1rem;
+    }
+    .menu-icon{
+        display:block;
+        margin-right:1rem;
+    }
+    nav.menu{
+        position:absolute;
+        top:3.5rem;
+        right:0;
+        width:100%;
+        background:black;
+        display:none;
+    }
+    nav.menu ul{
+        flex-direction:column;
+        align-items: center;
+        gap:1rem;
+        padding:1rem 0;
+    }
+    #drop-menu:checked + .menu-icon + nav.menu{
+        display:block;
+    }
+    .intro-box{
+        flex-direction: column;
+        height:auto;
+        align-items: center;
+
+    }
+    .headtitle{
+        height:auto;
+        padding:0.5rem;
+        font-size:1.2rem;
+    }
+    .box-pf,
+    .box-intro,
+    .box-contact{
+        width:100%;
+        height:auto;
+        min-height: 40vh;
+        border-radius: 15px;
+    }
+    img.pf{
+        height:auto;
+        width:80%;
+        margin-left: 10%;
+
+    }
+    .opleidings-box{
+        width:100%;
+        height:auto;
+        .opleidings-cards{
+            height:auto;
+            flex-direction: column;
+            section{
+                width:70%;
+
+
+            }
+
+        }
+
+
+    }
+
+
+    .skills-box{
+        height:auto;
+        .Hard-skills,
+        .Soft-skills{
+            flex-direction: row;
+            height:auto;
+            gap:2rem;
+            margin-bottom: 1rem;
+            section{
+                width:45%;
+            }
+        }
+    }
+
+    .tabel-talen{
+        width:100%;
+        font-size:10pt;
+    }
+    .werk-box{
+        height:auto;
+        .work-cards{
+            flex-direction: column;
+            height:auto;
+            gap:1rem;
+            margin-bottom:1rem;
+
+            section{
+                width:90%;
+                height:auto;
+            }
+        }
+    }
+
+    footer{
+        flex-direction: row;
+        height:auto;
+        font-size:10pt;
+        gap:1rem;
+    }
+
+
+}
+@media(min-width:576.2px)and (max-width: 991.98px){
+    header{
+        height:3.5rem;
+        font-size:1.2rem;
+        padding:0 1rem;
+        border-radius:15px;
+    }
+    .name{
+        margin-left:1rem;
+
+    }
+    nav ul{
+        gap:1rem;
+        margin-right:1rem;
+    }
+    .menu-icon{
+        display:block;
+        margin-right:1rem;
+    }
+    nav.menu{
+        position:absolute;
+        top:3.5rem;
+        right:0;
+        width:100%;
+        background:black;
+        display:none;
+    }
+    nav.menu ul{
+        flex-direction:column;
+        align-items: center;
+        gap:1rem;
+        padding:1rem 0;
+    }
+    #drop-menu:checked + .menu-icon + nav.menu{
+        display:block;
+    }
+    .intro-box{
+        flex-direction: column;
+        height:auto;
+        align-items: center;
+
+    }
+    .headtitle{
+        height:auto;
+        padding:0.5rem;
+        font-size:1.2rem;
+    }
+    .box-pf,
+    .box-intro,
+    .box-contact{
+        width:100%;
+        height:auto;
+        min-height: 40vh;
+        border-radius: 15px;
+    }
+    img.pf{
+        height:auto;
+        width:80%;
+        margin-left: 10%;
+
+    }
+    .opleidings-box{
+        width:100%;
+        height:auto;
+        .opleidings-cards{
+            height:auto;
+            flex-direction: column;
+            section{
+                width:70%;
+
+
+            }
+
+        }
+
+
+    }
+
+
+    .skills-box{
+        height:auto;
+        .Hard-skills,
+        .Soft-skills{
+            flex-direction: row;
+            height:auto;
+            gap:2rem;
+            margin-bottom: 1rem;
+            section{
+                width:45%;
+            }
+        }
+    }
+
+    .tabel-talen{
+        width:100%;
+        font-size:10pt;
+    }
+    .werk-box{
+        height:auto;
+        .work-cards{
+            flex-direction: column;
+            height:auto;
+            gap:1rem;
+            margin-bottom:1rem;
+
+            section{
+                width:90%;
+                height:auto;
+            }
+        }
+    }
+
+    footer{
+        flex-direction: row;
+        height:auto;
+        font-size:10pt;
+        gap:1rem;
+    }
+
+}
 
 
 
