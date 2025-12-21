@@ -288,44 +288,47 @@ img.pf {
                     height: 100%;
                     position: relative;
                     border-radius: 10px;
+                    animation: fillBar 1s ease-out forwards;
+
+
 
                 }
 
                 .bi {
-                    width: 60%;
+                   --target-width:60%;
                 }
 
                 .git {
-                    width: 80%;
+                  --target-width: 80%;
                 }
 
                 .sql {
-                    width: 70%;
+                    --target-width: 70%;
                 }
 
                 .sketch {
-                    width: 85%
+                    --target-width: 85%
                 }
 
                 .notion {
-                    width: 75%
+                    --target-width: 75%
                 }
 
                 .sap {
-                    width: 55%
+                    --target-width: 55%
                 }
 
                 .office {
-                    width: 90%
+                    --target-width: 90%
 
                 }
 
                 .web {
-                    width: 75%;
+                    --target-width: 75%;
                 }
 
                 .csharp {
-                    width: 50%;
+                   --target-width: 50%;
                 }
 
 
@@ -553,11 +556,19 @@ footer {
     animation:gradient 15s ease infinite;
     height:5rem;
 }
+@keyframes fillBar{
+    from{
+        width:0;
+    }
+    to{
+        width:var(--target-width);
+    }
+}
 
 @keyframes gradient {
-    0%{background-position: 0% 50%;}
+    0%{background-position: 0 50%;}
     50%{background-position: 100% 50%;}
-    100%{background-position: 0% 50%;} }
+    100%{background-position: 0 50%;} }
 @media (max-width: 576px){
     header{
         height:3.5rem;
@@ -677,16 +688,17 @@ footer {
             height: 100%;
             position: relative;
             border-radius: 10px;
+            animation: fillBar 1s ease-out forwards;
 
         }
         .ned{
-            width: 100%;
+            --target-width: 100%;
         }
         .eng{
-            width:80%;
+            --target-width:80%;
         }
         .fra{
-            width:30%;
+            --target-width:30%;
         }
 
     }
@@ -715,7 +727,8 @@ footer {
 
 
 }
-@media(min-width:576.2px)and (max-width: 991.98px){
+@media(min-width:576px)and (max-width: 992px){
+
     header{
         height:3.5rem;
         font-size:1.2rem;
