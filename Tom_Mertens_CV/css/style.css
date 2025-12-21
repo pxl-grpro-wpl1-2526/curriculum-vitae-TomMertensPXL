@@ -414,11 +414,11 @@ img.pf {
         }
 
         tr:nth-child(even) {
-            background-color: #A0B2A6;
+            background-color: #3a60a0;
         }
 
         tr:nth-child(odd) {
-            background-color: #CBBFBB;
+            background-color: #4d4177;
         }
 
 
