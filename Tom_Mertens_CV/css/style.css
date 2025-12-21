@@ -468,6 +468,7 @@ img.pf {
 
                     li {
                         padding: 1.15rem;
+
                     }
                 }
 
@@ -564,7 +565,6 @@ footer {
         width:var(--target-width);
     }
 }
-
 @keyframes gradient {
     0%{background-position: 0 50%;}
     50%{background-position: 100% 50%;}
